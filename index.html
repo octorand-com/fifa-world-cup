@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+
+    <title>
+        World Cup
+    </title>
+
+    <style>
+        html {
+            background: #f9fafb;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background: #ffffff;
+            height: 100%;
+            width: 100%;
+            font-family: "Roboto", sans-serif;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .main {
+            background: #ffffff;
+        }
+
+        .navbar-item:hover {
+            color: #00d1b2 !important;
+        }
+
+        .description {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <nav class="navbar is-spaced has-shadow" role="navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img src="https://octorand.com/assets/img/logo/logo.png" width="28" height="28">
+                    <span class="ml-2">Octorand</span>
+                </a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-body">
+                <div class="columns">
+                    <div class="column has-text-centered">
+                        <p class="title mb-5">World Cup Octorand Prime Configurator</p>
+                        <p class="mb-5">
+                            Fill in your selections below - and the site will update with which letters you need to set
+                            your Gen2 to.
+                        </p>
+                        <div class="table-container description mb-4">
+                            <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+                                <tbody>
+                                    <tr>
+                                        <th>Group</th>
+                                        <th>Winner</th>
+                                        <th>Runner Up</th>
+                                    </tr>
+                                    <tr>
+                                        <td>A</td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="groupA">
+                                                    <option value="A">Qatar</option>
+                                                    <option value="B">Ecuador</option>
+                                                    <option value="C">Senegal</option>
+                                                    <option value="D">Netherlands</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="runnerA">
+                                                    <option value="A">Qatar</option>
+                                                    <option value="B">Ecuador</option>
+                                                    <option value="C">Senegal</option>
+                                                    <option value="D">Netherlands</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>B</td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="groupB">
+                                                    <option value="A">England</option>
+                                                    <option value="B">Iran</option>
+                                                    <option value="C">USA</option>
+                                                    <option value="D">Wales</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="runnerB">
+                                                    <option value="A">England</option>
+                                                    <option value="B">Iran</option>
+                                                    <option value="C">USA</option>
+                                                    <option value="D">Wales</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>C</td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="groupC">
+                                                    <option value="A">Argentina</option>
+                                                    <option value="B">Saudi Arabia</option>
+                                                    <option value="C">Mexico</option>
+                                                    <option value="D">Poland</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="runnerC">
+                                                    <option value="A">Argentina</option>
+                                                    <option value="B">Saudi Arabia</option>
+                                                    <option value="C">Mexico</option>
+                                                    <option value="D">Poland</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>D</td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="groupD">
+                                                    <option value="A">France</option>
+                                                    <option value="B">Australia</option>
+                                                    <option value="C">Denmark</option>
+                                                    <option value="D">Tunisia</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="runnerD">
+                                                    <option value="A">France</option>
+                                                    <option value="B">Australia</option>
+                                                    <option value="C">Denmark</option>
+                                                    <option value="D">Tunisia</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>E</td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="groupE">
+                                                    <option value="A">Spain</option>
+                                                    <option value="B">Costa Rica</option>
+                                                    <option value="C">Germany</option>
+                                                    <option value="D">Japan</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="runnerE">
+                                                    <option value="A">Spain</option>
+                                                    <option value="B">Costa Rica</option>
+                                                    <option value="C">Germany</option>
+                                                    <option value="D">Japan</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>F</td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="groupF">
+                                                    <option value="A">Belgium</option>
+                                                    <option value="B">Canada</option>
+                                                    <option value="C">Morocco</option>
+                                                    <option value="D">Croatia</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="runnerF">
+                                                    <option value="A">Belgium</option>
+                                                    <option value="B">Canada</option>
+                                                    <option value="C">Morocco</option>
+                                                    <option value="D">Croatia</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>G</td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="groupG">
+                                                    <option value="A">Brazil</option>
+                                                    <option value="B">Serbia</option>
+                                                    <option value="C">Switzerland</option>
+                                                    <option value="D">Cameroon</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="runnerG">
+                                                    <option value="A">Brazil</option>
+                                                    <option value="B">Serbia</option>
+                                                    <option value="C">Switzerland</option>
+                                                    <option value="D">Cameroon</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>H</td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="groupH">
+                                                    <option value="A">Portugal</option>
+                                                    <option value="B">Ghana</option>
+                                                    <option value="C">Uruguay</option>
+                                                    <option value="D">South Korea</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="select is-fullwidth">
+                                                <select id="runnerH">
+                                                    <option value="A">Portugal</option>
+                                                    <option value="B">Ghana</option>
+                                                    <option value="C">Uruguay</option>
+                                                    <option value="D">South Korea</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mt-5 mb-5">
+                            <p> The value of the option selected is:
+                                <span class="output">----------------</span>
+                            </p>
+                        </div>
+                        <div>
+                            <button class="button is-primary" onclick="getOption()">Generate Prime Config</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript">
+        function getOption() {
+            output = document.querySelector('#groupA').value +
+                document.querySelector('#groupB').value +
+                document.querySelector('#groupC').value +
+                document.querySelector('#groupD').value +
+                document.querySelector('#groupE').value +
+                document.querySelector('#groupF').value +
+                document.querySelector('#groupG').value +
+                document.querySelector('#groupH').value +
+                document.querySelector('#runnerA').value +
+                document.querySelector('#runnerB').value +
+                document.querySelector('#runnerC').value +
+                document.querySelector('#runnerD').value +
+                document.querySelector('#runnerE').value +
+                document.querySelector('#runnerF').value +
+                document.querySelector('#runnerG').value +
+                document.querySelector('#runnerH').value;
+            document.querySelector('.output').textContent = output;
+        }
+    </script>
+
+</body>
+
+</html>
